@@ -1,0 +1,17 @@
+name: TestTemplate
+description: Pay down technical debt, reduce friction etc.
+labels: kind/cleanup
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: What should be tested or changed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this needed?
+    validations:
+      required: true
