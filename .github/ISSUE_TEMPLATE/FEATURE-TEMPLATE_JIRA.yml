@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: 2023 RTE FRANCE
+#
+# SPDX-License-Identifier: Apache-2.0
+
+name: "💡 Feature TEMPLATE Jira Integration"
+description: Create a new ticket for a new feature request
+title: "💡 [TEMPLATE] - <title>"
+labels: [
+  "question"
+]
+body:
+  - type: textarea
+    id: implementation_us
+    attributes:
+      label: "User Story"
+      description: User Story
+      value: "As a ..
+      
+      
+      I want to ..
+      
+      
+      So that .."
+    validations:
+      required: true
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Acceptance criteria"
+      description: Acceptance criteria
+      placeholder: "Please describe the initial acceptance critera."
+    validations:
+      required: false
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "Basic Example"
+      description: Indicate here some basic examples of your feature.
+      value: " ```xml 
+      
+      ``` "
+    validations:
+      required: true

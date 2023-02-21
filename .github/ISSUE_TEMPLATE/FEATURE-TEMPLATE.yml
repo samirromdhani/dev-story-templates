@@ -1,0 +1,91 @@
+# SPDX-FileCopyrightText: 2023 RTE FRANCE
+#
+# SPDX-License-Identifier: Apache-2.0
+
+name: "💡 Feature TEMPLATE"
+description: Create a new ticket for a new feature request
+title: "💡 [TEMPLATE] - <title>"
+labels: [
+  "question"
+]
+body:
+  - type: textarea
+    id: implementation_pr
+    attributes:
+      label: "Implementation PR"
+      description: Pull request used
+      placeholder: "#Pull Request ID"
+    validations:
+      required: false
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Reference Issues"
+      description: Common issues
+      placeholder: "#Issues IDs"
+    validations:
+      required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: Provide a brief explanation of the feature
+      placeholder: Describe in a few lines your feature request
+    validations:
+      required: true
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "Basic Example"
+      description: Indicate here some basic examples of your feature.
+      placeholder: A few specific words about your feature request.
+    validations:
+      required: true
+  - type: textarea
+    id: basic_example2
+    attributes:
+      label: "Basic Example 2"
+      description: Indicate here some basic examples of your feature.
+      value: " ```xml
+<SCL version='2007' revision='B' release='4' xmlns='http://www.iec.ch/61850/2003/SCL'>
+  <Header id='hId' version='2007' revision='B' toolID='COMPAS'/>
+  <IED name='IED_NAME'>
+     <AccessPoint name='AP_NAME'> ...
+  </IED>
+  <DataTypeTemplates>
+   ...
+  </DataTypeTemplates>
+</SCL>
+``` "
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: If applicable, provide relevant log output. No need for backticks here.
+      render: xml
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: "Drawbacks"
+      description: What are the drawbacks/impacts of your feature request ?
+      placeholder: Identify the drawbacks and impacts while being neutral on your feature request
+    validations:
+      required: true
+  - type: textarea
+    id: unresolved_question
+    attributes:
+      label: "Unresolved questions"
+      description: What questions still remain unresolved ?
+      placeholder: Identify any unresolved issues.
+    validations:
+      required: false

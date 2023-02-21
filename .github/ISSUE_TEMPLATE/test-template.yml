@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 RTE FRANCE
+#
+# SPDX-License-Identifier: Apache-2.0
+
 name: TestTemplate
 description: test a new issue creation template, make redaction easier, etc.
 labels: kind/test

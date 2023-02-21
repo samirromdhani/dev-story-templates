@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2023 RTE FRANCE
+#
+# SPDX-License-Identifier: Apache-2.0
+
+HELP.md
+target/
+.scannerwork
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
